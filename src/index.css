@@ -1,0 +1,237 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brutalist-bg: #FFFDF0;
+  --color-brutalist-card: #FFFFFF;
+  --color-brutalist-accent: #FFD600;
+  --color-brutalist-danger: #FF3B30;
+  --color-brutalist-success: #34C759;
+  --color-brutalist-info: #007AFF;
+  --color-brutalist-purple: #AF52DE;
+  --color-brutalist-border: #000000;
+  --color-brutalist-text: #1A1A1A;
+  --color-brutalist-muted: #6B6B6B;
+}
+
+* {
+  border-color: #000000;
+}
+
+body {
+  font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  background-color: var(--color-brutalist-bg);
+  color: var(--color-brutalist-text);
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-brutalist-bg);
+  border-left: 2px solid #000;
+}
+::-webkit-scrollbar-thumb {
+  background: #000;
+  border: 2px solid var(--color-brutalist-bg);
+}
+
+.brutal-card {
+  background-color: #ffffff;
+  border: 2px solid #000000;
+  padding: 1rem;
+  box-shadow: 4px 4px 0px #000000;
+}
+
+.brutal-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  font-weight: 800;
+  border: 2px solid #000000;
+  cursor: pointer;
+  transition: all 100ms ease;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.875rem;
+  box-shadow: 4px 4px 0px #000000;
+}
+
+.brutal-btn:hover {
+  box-shadow: 2px 2px 0px #000000;
+  transform: translate(2px, 2px);
+}
+
+.brutal-btn:active {
+  box-shadow: 0px 0px 0px #000000;
+  transform: translate(4px, 4px);
+}
+
+.brutal-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  font-weight: 800;
+  border: 2px solid #000000;
+  cursor: pointer;
+  transition: all 100ms ease;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.875rem;
+  background-color: var(--color-brutalist-accent);
+  color: #000000;
+  box-shadow: 4px 4px 0px #000000;
+}
+
+.brutal-btn-primary:hover {
+  box-shadow: 2px 2px 0px #000000;
+  transform: translate(2px, 2px);
+}
+
+.brutal-btn-primary:active {
+  box-shadow: 0px 0px 0px #000000;
+  transform: translate(4px, 4px);
+}
+
+.brutal-btn-danger {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  font-weight: 800;
+  border: 2px solid #000000;
+  cursor: pointer;
+  transition: all 100ms ease;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.875rem;
+  background-color: var(--color-brutalist-danger);
+  color: #ffffff;
+  box-shadow: 4px 4px 0px #000000;
+}
+
+.brutal-btn-danger:hover {
+  box-shadow: 2px 2px 0px #000000;
+  transform: translate(2px, 2px);
+}
+
+.brutal-btn-danger:active {
+  box-shadow: 0px 0px 0px #000000;
+  transform: translate(4px, 4px);
+}
+
+.brutal-btn-success {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  font-weight: 800;
+  border: 2px solid #000000;
+  cursor: pointer;
+  transition: all 100ms ease;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.875rem;
+  background-color: var(--color-brutalist-success);
+  color: #ffffff;
+  box-shadow: 4px 4px 0px #000000;
+}
+
+.brutal-btn-success:hover {
+  box-shadow: 2px 2px 0px #000000;
+  transform: translate(2px, 2px);
+}
+
+.brutal-btn-success:active {
+  box-shadow: 0px 0px 0px #000000;
+  transform: translate(4px, 4px);
+}
+
+.brutal-btn-info {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  font-weight: 800;
+  border: 2px solid #000000;
+  cursor: pointer;
+  transition: all 100ms ease;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.875rem;
+  background-color: var(--color-brutalist-info);
+  color: #ffffff;
+  box-shadow: 4px 4px 0px #000000;
+}
+
+.brutal-btn-info:hover {
+  box-shadow: 2px 2px 0px #000000;
+  transform: translate(2px, 2px);
+}
+
+.brutal-btn-info:active {
+  box-shadow: 0px 0px 0px #000000;
+  transform: translate(4px, 4px);
+}
+
+.brutal-input {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border: 2px solid #000000;
+  background-color: #ffffff;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.875rem;
+  box-shadow: 3px 3px 0px #000000;
+  outline: none;
+}
+
+.brutal-input:focus {
+  box-shadow: 1px 1px 0px #000000;
+  transform: translate(2px, 2px);
+}
+
+.brutal-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.125rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 800;
+  border: 2px solid #000000;
+  text-transform: uppercase;
+  box-shadow: 2px 2px 0px #000000;
+}
+
+.brutal-select {
+  padding: 0.5rem 0.75rem;
+  border: 2px solid #000000;
+  background-color: #ffffff;
+  font-weight: 700;
+  font-size: 0.875rem;
+  cursor: pointer;
+  outline: none;
+  appearance: none;
+  box-shadow: 3px 3px 0px #000000;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath d='M2 4l4 4 4-4' stroke='%23000' stroke-width='2' fill='none'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+  padding-right: 28px;
+}
+
+.brutal-checkbox {
+  width: 1.25rem;
+  height: 1.25rem;
+  border: 2px solid #000000;
+  appearance: none;
+  cursor: pointer;
+  background-color: #ffffff;
+  box-shadow: 2px 2px 0px #000000;
+}
+
+.brutal-checkbox:checked {
+  background-color: var(--color-brutalist-accent);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14'%3E%3Cpath d='M3 7l3 3 5-5' stroke='%23000' stroke-width='2.5' fill='none'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+}
