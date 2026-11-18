@@ -4,6 +4,7 @@
 
 AltSpace is a lightweight, local-first desktop application built with Tauri v2 designed for instant privacy preservation and rapid workspace profile switching. With a single global panic hotkey, AltSpace immediately hides target windows, mutes designated application audio streams, and swaps your desktop wallpaper in a split second.
 
+[![Release: v1.0.0](https://img.shields.io/badge/Release-v1.0.0-emerald.svg)](https://github.com/lazuardirakadesu/altspace/releases)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Tauri v2](https://img.shields.io/badge/Tauri-v2-blue.svg)](https://v2.tauri.app/)
 [![Rust](https://img.shields.io/badge/Rust-Backend-orange.svg)](https://www.rust-lang.org/)
